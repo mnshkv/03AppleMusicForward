@@ -36,7 +36,7 @@ struct ContentView: View {
     
     func showAnimate() {
         animationCount -= 1
-        withAnimation(.smooth) {
+        withAnimation(.smooth(extraBounce: 0.4)) {
             isTapped = true
         } completion: {
             isTapped = false
